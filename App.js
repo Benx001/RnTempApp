@@ -1,5 +1,5 @@
 /**
- * React Native App to show the temperature from TC74 temperature sensor conected to a raspberry pi pico
+ * React Native App to show the temperature from TC74 temperature sensor connected to a raspberry pi pico
  * https://github.com/Benx001/RnTempApp
  * For the raspberry pi pico https://github.com/Benx001/TempSensor
  * 
