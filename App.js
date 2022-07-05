@@ -308,11 +308,12 @@ const App: () => Node = () => {
     if (Number.isNaN(thetemp)) {
       return;
     }
-    if (thetemp > 140) {
+    
+    thetemp = thetemp > 127 ? (257 + ~thetemp) * (-1) : thetemp;
+
+    if (thetemp > 140 || thetemp < -50) {
       return;
     }
-
-    thetemp = thetemp > 127 ? (257 + ~thetemp) * (-1) : thetemp;
 
     axios.post(`http://192.168.50.10:4999/addTemp`, {
       temp: thetemp
